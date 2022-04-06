@@ -2,6 +2,8 @@
 
 ![Calculator App screenshot](calculator-main.png)
 
+https://jbdigital.online/calculator/
+
 I'm just practicing to improve my React and JS skills.
 This is a simple calculator, with basics operations and a macOS look.
 
