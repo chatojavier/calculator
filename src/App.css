@@ -1,0 +1,85 @@
+header {
+	padding: 1rem;
+}
+
+header h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(50, 50, 50);
+}
+
+.App {
+	margin: 1rem auto;
+	border: 1px solid rgb(50, 50, 50);
+	border-radius: 2%;
+	overflow: hidden;
+	position: relative;
+	max-width: 386px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Keyboard {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.CalcKey {
+	border: 0.5px solid rgb(50, 50, 50);
+	padding: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	min-width: 60.5px;
+}
+
+.bg-lightgrey {
+	background-color: #666;
+}
+.bg-darkgrey {
+	background-color: rgb(66, 66, 66);
+}
+.bg-orange {
+	background-color: orange;
+}
+
+.grid-cols-2 {
+	grid-column: span 2;
+}
+
+.bg-lightgrey:active {
+	background-color: rgb(128, 128, 128);
+}
+
+.bg-darkgrey:active {
+	background-color: #666;
+}
+
+.bg-orange:active {
+	background-color: rgb(195, 127, 0);
+}
+
+.Screen {
+	padding: 1rem;
+	font-size: 3rem;
+	text-align: right;
+	color: #fff;
+	background-color: rgb(50, 50, 50);
+}
+
+.focus-grey::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+
+.CalcKey.focus-grey:focus::before {
+	border: 1px solid rgb(50, 50, 50);
+}
